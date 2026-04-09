@@ -1,131 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogr</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blogr — A Modern Publishing Platform. Grow Your Audience And Build Your Online Brand." />
+  <title>Blogr — A Modern Publishing Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav id="menu">
-        <h1>Blogr</h1>
-        <ul>
-            <li>Product</li>
-            <li>Company</li>
-            <li>Connect</li>
-        </ul>
-        <div class="div_menu">
-            <button class="btn">Login</button>
-            <button class="btn_blanco">Sign Up</button>
-        </div>
-    </nav>
 
-    <header id="banner">
-        <h1>A Modern publishing platform</h1>
-        <p>Grow your audience and build your online brand</p>
-        <button>Start for Free</button>
-        <button>Learn More</button>
-    </header>
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar__inner">
 
-    <section id="sc1">
-        <div>
-            <h2>Designed for the future</h2>
-            <h3>Introducing an extensible editor</h3>
-            <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
-tellus.
-</p>
-            <h3>Robust content management</h3>
-            <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
-tellus.
-</p>
+      <a href="#" class="navbar__logo" aria-label="Blogr home">Blogr</a>
+
+      <!-- Mobile hamburger -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navbar__menu" id="nav-menu">
+        <nav class="navbar__nav" aria-label="Main navigation">
+          <div class="nav-group">
+            <button class="nav-group__toggle" aria-haspopup="true">Product <span class="caret">▾</span></button>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group__toggle" aria-haspopup="true">Company <span class="caret">▾</span></button>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group__toggle" aria-haspopup="true">Connect <span class="caret">▾</span></button>
+          </div>
+        </nav>
+
+        <div class="navbar__actions">
+          <a href="#" class="btn btn--nav-ghost">Login</a>
+          <a href="#" class="btn btn--nav-white">Sign Up</a>
         </div>
-        <img src="img/img_01.jpg" alt="Editor illustration">
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__blobs" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+      </div>
+      <div class="container hero__content">
+        <h1 class="hero__title">A Modern Publishing Platform</h1>
+        <p class="hero__subtitle">Grow Your Audience And Build Your Online Brand</p>
+        <div class="hero__cta">
+          <a href="#" class="btn btn--white-fill" id="cta-start">Start For Free</a>
+          <a href="#" class="btn btn--outline-hero" id="cta-learn">Learn More</a>
+        </div>
+      </div>
+      <div class="hero__wave-bottom" aria-hidden="true"></div>
     </section>
 
-    <section id="sc2">
-        <div class="sc2-inner">
-            <img src="img/img_02.jpg" alt="Infrastructure illustration">
-            <div class="sc2-text">
-                <h2>State of the Art Infrastructure</h2>
-                <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
-tellus.
-</p>
-            </div>
+    <!-- ═══════════════════════════════════════════
+         SECTION 1 — Designed for the Future
+    ═══════════════════════════════════════════ -->
+    <section class="section section--light" id="features" aria-label="Features">
+      <div class="features-container">
+
+        <!-- Text column -->
+        <div class="features-text">
+          <h2 class="section__title">Designed for the Future</h2>
+
+          <article class="feature-block">
+            <h3 class="feature-block__heading">Introducing an Extensible Editor</h3>
+            <p class="feature-block__body">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports management
+              of multiple blogs and allows easy manipulation of embeds such as
+              images, videos, and Markdown. Extensibility with plugins and themes
+              provide easy ways to add functionality or change the looks of a blog.
+            </p>
+          </article>
+
+          <article class="feature-block">
+            <h3 class="feature-block__heading">Robust Content Management</h3>
+            <p class="feature-block__body">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you're in full control.
+            </p>
+          </article>
         </div>
+
+        <!-- Illustration — overflows to the right -->
+        <div class="features-illustration" aria-hidden="true">
+          <img
+            src="img/illustration-editor-desktop.svg"
+            alt="Editor interface illustration"
+            class="illustration illustration--editor"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
     </section>
 
-    <section id="sc3">
-        <div class="sc3-inner">
-            <img src="img/img_03.jpg" alt="Open source illustration">
-            <div class="sc3-text">
-                <h3>Free, open, simple</h3>
-                <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
-tellus.
-</p>
-                <h3>Powerful tooling</h3>
-                <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
-tellus.
-</p>
-            </div>
-        </div>
+    <!-- ═══════════════════════════════════════════
+         SECTION 2 — State of the Art Infrastructure (dark)
+    ═══════════════════════════════════════════ -->
+    <section class="section section--dark" id="infrastructure" aria-label="Infrastructure">
+      <div class="section--dark__wave-top" aria-hidden="true"></div>
+
+      <!-- Phones illustration — overflows to the left -->
+      <div class="phones-illustration" aria-hidden="true">
+        <img
+          src="img/illustration-phones.svg"
+          alt="Mobile app illustration"
+          class="illustration illustration--phones"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="container infra-text">
+        <h2 class="section__title section__title--light">State of the Art Infrastructure</h2>
+        <p class="infra-text__body">
+          With reliability and speed in mind, worldwide data centers provide
+          the backbone for ultra-fast connectivity. This ensures your site
+          will load instantly, no matter where your readers are, keeping
+          your site competitive.
+        </p>
+      </div>
+
+      <div class="section--dark__wave-bottom" aria-hidden="true"></div>
     </section>
 
-    <footer id="pie">
-        <h2>Blogr</h2>
-        <div>
-            <p>Product</p>
-            <a>Overview</a>
-            <a>Pricing</a>
-            <a>Marketplace</a>
-            <a>Features</a>
-            <a>Integrations</a>
+    <!-- ═══════════════════════════════════════════
+         SECTION 3 — Free, Open, Simple + Tooling
+    ═══════════════════════════════════════════ -->
+    <section class="section section--light" id="tooling" aria-label="Tooling">
+      <div class="tooling-container">
+
+        <!-- Laptop illustration — overflows to the left -->
+        <div class="tooling-illustration" aria-hidden="true">
+          <img
+            src="img/illustration-laptop-desktop.svg"
+            alt="Laptop interface illustration"
+            class="illustration illustration--laptop"
+            loading="lazy"
+          />
         </div>
-        <div>
-            <p>Company</p>
-            <a>About</a>
-            <a>Team</a>
-            <a>Blog</a>
-            <a>Careers</a>
+
+        <!-- Text column -->
+        <div class="tooling-text">
+          <article class="feature-block">
+            <h3 class="feature-block__heading">Free, Open, Simple</h3>
+            <p class="feature-block__body">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as
+              code syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+          </article>
+
+          <article class="feature-block">
+            <h3 class="feature-block__heading">Powerful Tooling</h3>
+            <p class="feature-block__body">
+              Batteries included. We built a simple and straightforward CLI
+              tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.
+            </p>
+          </article>
         </div>
-        <div>
-            <p>Connect</p>
-            <a>Contact</a>
-            <a>Newsletter</a>
-            <a>LinkedIn</a>
-        </div>
-    </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo">Blogr</span>
+      </div>
+
+      <nav class="footer__col" aria-label="Product links">
+        <span class="footer__col-title">Product</span>
+        <a href="#" class="footer__link">Overview</a>
+        <a href="#" class="footer__link">Pricing</a>
+        <a href="#" class="footer__link">Marketplace</a>
+        <a href="#" class="footer__link">Features</a>
+        <a href="#" class="footer__link">Integrations</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company links">
+        <span class="footer__col-title">Company</span>
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Team</a>
+        <a href="#" class="footer__link">Blog</a>
+        <a href="#" class="footer__link">Careers</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Connect links">
+        <span class="footer__col-title">Connect</span>
+        <a href="#" class="footer__link">Contact</a>
+        <a href="#" class="footer__link">Newsletter</a>
+        <a href="#" class="footer__link">LinkedIn</a>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const header = document.getElementById('site-header');
+    
+    hamburger.addEventListener('click', () => {
+      header.classList.toggle('is-open');
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !isExpanded);
+    });
+  </script>
+
 </body>
 </html>
