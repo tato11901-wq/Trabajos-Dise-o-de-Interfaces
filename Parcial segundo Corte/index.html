@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoomiesCajicá — Encuentra tu compañero de cuarto ideal</title>
+  <meta name="description" content="La plataforma para millennials en Cajicá que buscan compañeros de cuarto y apartamentos de forma segura, verificada y local." />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a href="index.html" class="navbar-logo" aria-label="Ir al inicio">
+          Roomies<span class="logo-dot">·</span>Cajicá
+        </a>
+
+        <ul class="navbar-links" role="list">
+          <li><a href="busqueda.html">Buscar Roomie</a></li>
+          <li><a href="#como-funciona">Cómo Funciona</a></li>
+          <li><a href="apartamento.html">Apartamentos</a></li>
+          <li><a href="perfil.html">Perfiles</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+          <a href="#" class="btn btn-outline btn-sm" id="btn-login">Iniciar Sesión</a>
+          <a href="#" class="btn btn-primary btn-sm" id="btn-register">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Main Content -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Copy -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <!-- Pin icon -->
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              Cajicá, Cundinamarca · Colombia
+            </div>
+
+            <h1 id="hero-heading">
+              Encuentra tu <em>roomie ideal</em><br>en Cajicá
+            </h1>
+
+            <p class="hero-sub">
+              Conectamos millennials con perfiles verificados que buscan compartir apartamentos
+              en Cajicá de forma segura, transparente y sin complicaciones.
+            </p>
+
+            <div class="hero-actions">
+              <a href="busqueda.html" class="btn-hero-primary" id="cta-buscar-roomie" role="button">
+                <!-- Search icon -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
+                Buscar Roomie
+              </a>
+              <a href="#listar" class="btn-hero-secondary" id="cta-listar-apartamento" role="button">
+                <!-- Home icon -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Listar Apartamento
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>+230</strong>
+                <small>Perfiles activos</small>
+              </div>
+              <div class="hero-stat">
+                <strong>+85</strong>
+                <small>Apartamentos</small>
+              </div>
+              <div class="hero-stat">
+                <strong>98%</strong>
+                <small>Verificados</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div style="border-radius:16px; overflow:hidden; height:380px; box-shadow:0 20px 60px rgba(0,0,0,.25);">
+              <img
+                src="images/hero-cajica.jpg"
+                alt="Vista del municipio de Cajicá, Cundinamarca"
+                style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Trust badge floating -->
+            <div class="hero-trust-badge" role="presentation">
+              <div class="trust-icon">
+                <!-- Shield check -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size:12px; font-weight:700; color:var(--color-text);">Plataforma verificada</div>
+                <div style="font-size:10px; color:var(--color-text-secondary);">Identidades confirmadas con cédula</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ FEATURES ══════════════════════════ -->
+    <section class="section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <p class="section-label">¿Por qué elegirnos?</p>
+        <h2 class="section-title" id="features-heading">Tu seguridad, nuestra prioridad</h2>
+        <p class="section-sub">
+          Diseñamos cada detalle pensando en millennials que buscan una experiencia confiable y moderna en Cajicá.
+        </p>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-icon" style="background:#E3F8F1;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <h4>Perfiles Verificados</h4>
+            <p>Todos los usuarios pasan por verificación de identidad con cédula colombiana. Sabes exactamente con quién te comunicás.</p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-icon" style="background:#FEF3D7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7A4F00" stroke-width="2" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h4>Compatibilidad Real</h4>
+            <p>Nuestro sistema analiza hábitos, horarios y preferencias para mostrarte solo los roomies con quienes realmente podrías convivir.</p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-icon" style="background:#FDE8E1;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B3822" stroke-width="2" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h4>Mensajería Privada</h4>
+            <p>Comunícate directamente a través de nuestro chat seguro sin compartir tu número personal hasta que estés completamente seguro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ HOW IT WORKS ══════════════════════════ -->
+    <section class="section section-alt" id="como-funciona" aria-labelledby="steps-heading">
+      <div class="container">
+        <p class="section-label text-center" style="display:block; text-align:center;">Proceso simple</p>
+        <h2 class="section-title text-center" id="steps-heading">¿Cómo funciona?</h2>
+        <p class="section-sub text-center" style="margin-inline:auto; display:block;">
+          Tres pasos para encontrar tu lugar ideal en Cajicá.
+        </p>
+
+        <div class="steps-grid">
+          <!-- Decorative connector line -->
+          <div class="steps-connector" aria-hidden="true"></div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h4>Crea tu Perfil</h4>
+            <p>Registra tu información, estilo de vida y presupuesto. La verificación de identidad toma menos de 5 minutos.</p>
+          </div>
+          <div class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h4>Explora Matches</h4>
+            <p>Navega perfiles y apartamentos en Cajicá con sus pills de compatibilidad personalizadas según tus preferencias.</p>
+          </div>
+          <div class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h4>¡Conecta!</h4>
+            <p>Envía un mensaje, agenda una visita y encuentra tu nuevo hogar en Cajicá sin estrés ni intermediarios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ TESTIMONIALS ══════════════════════════ -->
+    <section class="section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <p class="section-label">Lo que dicen</p>
+        <h2 class="section-title" id="testimonials-heading">Historias reales de Cajicá</h2>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-text">"Encontré mi roomie en menos de dos semanas. Los perfiles verificados me dieron total confianza desde el primer mensaje."</p>
+            <div class="testimonial-author">
+              <div class="avatar-ph" style="width:38px;height:38px;" aria-label="Foto de Sofía M.">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+              </div>
+              <div>
+                <div class="testimonial-author-name">Sofía M.</div>
+                <div class="testimonial-author-sub">Diseñadora · Cajicá Centro</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-text">"La pill de compatibilidad fue clave. Solo vi perfiles que realmente encajaban con mi estilo de vida. ¡Increíble herramienta!"</p>
+            <div class="testimonial-author">
+              <div class="avatar-ph" style="width:38px;height:38px;" aria-label="Foto de Andrés R.">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+              </div>
+              <div>
+                <div class="testimonial-author-name">Andrés R.</div>
+                <div class="testimonial-author-sub">Ingeniero · El Rosal</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+            <p class="testimonial-text">"Listamos nuestro apartamento y en 3 días teníamos 12 solicitudes de personas verificadas. Super recomendado."</p>
+            <div class="testimonial-author">
+              <div class="avatar-ph" style="width:38px;height:38px;" aria-label="Foto de Valeria T.">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+              </div>
+              <div>
+                <div class="testimonial-author-name">Valeria T.</div>
+                <div class="testimonial-author-sub">Arrendadora · Cajicá Norte</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ CTA BANNER ══════════════════════════ -->
+    <section class="section" id="listar" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-text">
+            <h2 id="cta-heading">¿Tienes un apartamento<br>en Cajicá?</h2>
+            <p>Publica gratis hoy y conecta con millennials verificados buscando su próximo hogar.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="#" class="btn-hero-primary" id="btn-listar-gratis" role="button">
+              Publicar Gratis
+            </a>
+            <a href="busqueda.html" class="btn-hero-secondary" role="button">
+              Ver Apartamentos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Roomies·Cajicá</div>
+          <p class="footer-brand-tagline">
+            La plataforma de búsqueda de roomies y apartamentos para millennials en Cajicá, Colombia.
+            Segura, verificada y completamente local.
+          </p>
+        </div>
+        <nav class="footer-col" aria-label="Plataforma">
+          <h5>Plataforma</h5>
+          <a href="busqueda.html">Buscar Roomie</a>
+          <a href="apartamento.html">Apartamentos</a>
+          <a href="#">Listar Propiedad</a>
+          <a href="#">Planes Premium</a>
+        </nav>
+        <nav class="footer-col" aria-label="Soporte">
+          <h5>Soporte</h5>
+          <a href="#">Centro de Ayuda</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Uso</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <nav class="footer-col" aria-label="Comunidad">
+          <h5>Comunidad</h5>
+          <a href="#">Blog de Cajicá</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp Community</a>
+          <a href="#">Referir un amigo</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 RoomiesCajicá · Hecho con ♥ en Cajicá, Cundinamarca</span>
+        <span>Colombia · Todos los derechos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

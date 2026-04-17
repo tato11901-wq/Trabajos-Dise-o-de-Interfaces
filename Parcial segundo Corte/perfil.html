@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil de Usuario — RoomiesCajicá</title>
+  <meta name="description" content="Perfil detallado de roomie verificado en Cajicá. Conoce su edad, profesión, presupuesto y estilo de vida antes de conectar." />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a href="index.html" class="navbar-logo">
+          Roomies<span class="logo-dot">·</span>Cajicá
+        </a>
+        <ul class="navbar-links" role="list">
+          <li><a href="busqueda.html">Buscar Roomie</a></li>
+          <li><a href="index.html#como-funciona">Cómo Funciona</a></li>
+          <li><a href="apartamento.html">Apartamentos</a></li>
+          <li><a href="perfil.html" class="active">Perfiles</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <a href="#" class="btn btn-outline btn-sm" id="btn-login">Iniciar Sesión</a>
+          <a href="#" class="btn btn-primary btn-sm" id="btn-register">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-profile" id="main-content">
+    <div class="container" style="max-width:1080px;">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Ruta de navegación" style="margin-bottom:16px;">
+        <ol style="display:flex; align-items:center; gap:6px; font-size:12px; color:var(--color-text-secondary); list-style:none;">
+          <li><a href="index.html" style="color:var(--color-primary);">Inicio</a></li>
+          <li style="opacity:.4;">/</li>
+          <li><a href="busqueda.html" style="color:var(--color-primary);">Buscar Roomie</a></li>
+          <li style="opacity:.4;">/</li>
+          <li>Valeria Torres</li>
+        </ol>
+      </nav>
+
+      <div class="profile-layout">
+
+        <!-- ── SIDEBAR: USER CARD ── -->
+        <aside class="profile-sidebar-sticky" aria-label="Tarjeta de usuario">
+
+          <article class="user-card" id="user-card-main">
+            <!-- "Nueva" badge -->
+            <div class="user-card-badge-new">
+              <span class="badge badge-new">✦ Nueva</span>
+            </div>
+
+            <!-- Avatar -->
+            <img
+              src="images/avatar-valeria.jpg"
+              alt="Foto de perfil de Valeria Torres"
+              class="user-card-avatar"
+              width="100" height="100"
+              style="object-fit:cover;"
+            />
+
+            <!-- Name + verified -->
+            <div class="user-card-name">
+              Valeria Torres
+              <!-- Verified badge -->
+              <span class="badge badge-verified" title="Identidad verificada con cédula colombiana">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Verificado">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Verificada
+              </span>
+            </div>
+
+            <!-- Meta: age, profession -->
+            <div class="user-card-meta">
+              <span>27 años</span>
+              <span class="sep">·</span>
+              <span>Comunicadora Social</span>
+              <span class="sep">·</span>
+              <span>Cajicá</span>
+            </div>
+
+            <!-- Rating 10 estrellas -->
+            <div class="user-rating-10">
+              <span class="stars-10">★★★★★★★★★☆</span>
+              <span class="score">9.4 / 10 (18 reseñas)</span>
+            </div>
+
+            <!-- Budget -->
+            <div class="user-card-budget" role="region" aria-label="Presupuesto mensual">
+              <div class="label">Presupuesto mensual</div>
+              <div class="amount">$800.000 – $1.100.000</div>
+            </div>
+
+            <!-- Lifestyle tags -->
+            <div class="user-card-tags" aria-label="Etiquetas de estilo de vida">
+              <span class="pill pill-neutral">🌅 Madrugadora</span>
+              <span class="pill pill-neutral">🚭 No fumadora</span>
+              <span class="pill pill-neutral">🐾 Sin mascotas</span>
+              <span class="pill pill-neutral">📚 Estudiosa</span>
+              <span class="pill pill-neutral">🎵 Música tranquila</span>
+              <span class="pill pill-neutral">🧹 Ordenada</span>
+            </div>
+
+            <!-- Actions -->
+            <div style="display:flex; flex-direction:column; gap:8px; width:100%;">
+              <a href="mensajes.html" class="btn btn-primary" id="btn-enviar-mensaje" style="width:100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Enviar Mensaje
+              </a>
+              <button class="btn btn-outline" id="btn-guardar-perfil" style="width:100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                Guardar Perfil
+              </button>
+            </div>
+
+            <!-- Member since -->
+            <p style="font-size:11px; color:var(--color-text-muted); text-align:center;">
+              Miembro desde enero 2025 · Responde en &lt;2h
+            </p>
+          </article>
+
+          <!-- Compatibility mini card -->
+          <div style="background:var(--color-card); border:1px solid var(--color-border); border-radius:var(--radius-card); padding:16px 20px; margin-top:14px;">
+            <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--color-text-secondary); margin-bottom:10px;">Tu compatibilidad</div>
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+              <span style="font-family:var(--font-heading); font-size:32px; font-weight:700; color:var(--color-primary-dark); line-height:1;">92%</span>
+              <div>
+                <span class="pill pill-success">Muy compatible</span>
+                <div style="font-size:11px; color:var(--color-text-secondary); margin-top:3px;">Según hábitos y horarios</div>
+              </div>
+            </div>
+            <div class="compat-bar">
+              <div class="compat-fill" style="width:92%;"></div>
+            </div>
+          </div>
+
+        </aside>
+        <!-- /SIDEBAR -->
+
+        <!-- ── MAIN CONTENT ── -->
+        <div class="profile-main" aria-label="Información detallada del perfil">
+
+          <!-- About -->
+          <section class="profile-section-card" aria-labelledby="about-heading">
+            <h4 id="about-heading">Sobre mí</h4>
+            <p>
+              ¡Hola! Soy Valeria, comunicadora social trabajando en Zipaquirá. Busco un apartamento en Cajicá
+              porque amo la tranquilidad del municipio y su cercanía al trabajo. Soy muy organizada, madrugadora
+              (me levanto a las 6am) y disfruto del café en las mañanas. Me gusta mantener los espacios comunes
+              limpios y tengo hábitos de estudio en las noches. Busco alguien con quien haya buena comunicación
+              y respeto por los espacios personales.
+            </p>
+          </section>
+
+          <!-- Lifestyle -->
+          <section class="profile-section-card" aria-labelledby="lifestyle-heading">
+            <h4 id="lifestyle-heading">Estilo de vida</h4>
+            <div class="lifestyle-grid">
+              <div class="lifestyle-item">
+                <span class="li-icon">🌅</span>
+                <span>Madrugadora (6am)</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🚭</span>
+                <span>No fumadora</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🐾</span>
+                <span>Sin mascotas</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🎉</span>
+                <span>Pocas reuniones</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🧹</span>
+                <span>Muy ordenada</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">📺</span>
+                <span>Streaming tranquilo</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🍳</span>
+                <span>Cocina en casa</span>
+              </div>
+              <div class="lifestyle-item">
+                <span class="li-icon">🌿</span>
+                <span>Naturaleza y parques</span>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- Reviews -->
+          <section class="profile-section-card" aria-labelledby="reviews-heading">
+            <h4 id="reviews-heading" style="margin-bottom:16px;">Reseñas de anteriores roomies</h4>
+
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div style="padding:14px; background:var(--color-bg); border-radius:var(--radius-card); border:1px solid var(--color-border);">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                  <div class="avatar-ph" style="width:32px; height:32px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                  </div>
+                  <div>
+                    <div style="font-size:13px; font-weight:600;">Juan C.</div>
+                <div style="font-size:10px; color:var(--color-text-muted);">Marzo 2025 · <span class="stars-10" style="font-size:10px;">★★★★★★★★★★</span> <span style="font-size:10px;">10/10</span></div>
+                  </div>
+                </div>
+                <p style="font-size:12px; color:var(--color-text-secondary); line-height:1.65; font-style:italic;">
+                  "Valeria es una compañera de cuarto excelente. Muy organizada y considerada con los espacios comunes. Totalmente recomendada."
+                </p>
+              </div>
+
+              <div style="padding:14px; background:var(--color-bg); border-radius:var(--radius-card); border:1px solid var(--color-border);">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                  <div class="avatar-ph" style="width:32px; height:32px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                  </div>
+                  <div>
+                    <div style="font-size:13px; font-weight:600;">Ana P.</div>
+                <div style="font-size:10px; color:var(--color-text-muted);">Enero 2025 · <span class="stars-10" style="font-size:10px;">★★★★★★★★★☆</span> <span style="font-size:10px;">9.5/10</span></div>
+                  </div>
+                </div>
+                <p style="font-size:12px; color:var(--color-text-secondary); line-height:1.65; font-style:italic;">
+                  "Vivir con ella fue una experiencia muy grata. Puntual con los pagos y siempre comunica si hay algo. ¡La volvería a elegir!"
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <!-- /MAIN CONTENT -->
+
+      </div>
+      <!-- /profile-layout -->
+
+    </div>
+
+</body>
+</html>
+

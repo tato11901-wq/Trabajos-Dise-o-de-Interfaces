@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Roomie en Cajicá — RoomiesCajicá</title>
+  <meta name="description" content="Explora roomies y apartamentos disponibles en Cajicá con filtros de compatibilidad, precio y ubicación." />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body class="page-search">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a href="index.html" class="navbar-logo">Roomies<span class="logo-dot">·</span>Cajicá</a>
+        <ul class="navbar-links" role="list">
+          <li><a href="busqueda.html" class="active">Buscar Roomie</a></li>
+          <li><a href="index.html#como-funciona">Cómo Funciona</a></li>
+          <li><a href="apartamento.html">Apartamentos</a></li>
+          <li><a href="perfil.html">Perfiles</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <a href="#" class="btn btn-outline btn-sm" id="btn-login">Iniciar Sesión</a>
+          <a href="#" class="btn btn-primary btn-sm" id="btn-register">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SPLIT LAYOUT: MAP LEFT · LIST RIGHT -->
+  <main class="search-layout" id="main-content">
+
+    <!-- ══ LEFT — MAPA ══ -->
+    <aside class="search-map" aria-label="Mapa de Cajicá">
+      <div class="map-chip" role="status">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        Cajicá, Cundinamarca
+      </div>
+      <iframe
+        title="Mapa de Cajicá, Cundinamarca"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0600%2C4.8900%2C-73.9700%2C4.9500&amp;layer=mapnik&amp;marker=4.9178%2C-74.0133"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer">
+      </iframe>
+    </aside>
+
+    <!-- ══ RIGHT — RESULTADOS ══ -->
+    <section aria-label="Lista de resultados" class="search-panel">
+
+      <!-- Filters -->
+      <div class="search-filters" role="search">
+        <input
+          id="search-location" type="search" class="form-input grow"
+          placeholder="Buscar por conjunto o barrio en Cajicá…"
+          aria-label="Buscar por ubicación"
+        />
+        <select id="filter-compat" class="form-input form-select" style="max-width:170px;" aria-label="Compatibilidad">
+          <option value="">Compatibilidad</option>
+          <option value="muy">Muy compatible</option>
+          <option value="compatible">Compatible</option>
+          <option value="poco">Poco compatible</option>
+        </select>
+        <select id="filter-price" class="form-input form-select" style="max-width:150px;" aria-label="Precio">
+          <option value="">Precio</option>
+          <option value="500">Hasta $500.000</option>
+          <option value="800">Hasta $800.000</option>
+          <option value="1200">Hasta $1.200.000</option>
+          <option value="1500">Hasta $1.500.000</option>
+        </select>
+        <select id="filter-sort" class="form-input form-select" style="max-width:140px;" aria-label="Ordenar">
+          <option value="compat">Más compatibles</option>
+          <option value="price-asc">Menor precio</option>
+          <option value="price-desc">Mayor precio</option>
+          <option value="recent">Más recientes</option>
+        </select>
+      </div>
+
+      <!-- Results header -->
+      <div class="search-results-header">
+        <span><strong>6 resultados</strong> en Cajicá</span>
+        <div class="pill pill-primary">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+          </svg>
+          Filtros activos
+        </div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="search-list" id="search-results" aria-live="polite">
+
+        <!-- Card 1 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-nogal-thumb.jpg" alt="Conjunto El Nogal, Cajicá Norte" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-success">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.41-1.41L10 13.67l6.59-6.59L18 8.5l-8 8z"/></svg>
+                Muy compatible
+              </span>
+              <span class="card-time">Hace 1h</span>
+            </div>
+            <div class="room-card-name">Conjunto El Nogal</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★★★★★☆</span>
+              <span class="score">9.4 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>2 hab.</span><span>·</span><span>1 baño</span><span>·</span><span>65 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Cajicá Norte, Cundinamarca
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$850.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-primary btn-sm" id="card1-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-rosal-thumb.jpg" alt="Torres del Rosal, Cajicá Centro" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-warning">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path fill="#fff" d="M11 7h2v6h-2zm0 8h2v2h-2z"/></svg>
+                Compatible
+              </span>
+              <span class="card-time">Hace 3h</span>
+            </div>
+            <div class="room-card-name">Torres del Rosal</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★★★★☆☆</span>
+              <span class="score">7.8 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>2 hab.</span><span>·</span><span>2 baños</span><span>·</span><span>58 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Cajicá Centro
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$720.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-primary btn-sm" id="card2-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-pinos-thumb.jpg" alt="Conjunto Los Pinos, La Plazuela" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-success">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.41-1.41L10 13.67l6.59-6.59L18 8.5l-8 8z"/></svg>
+                Muy compatible
+              </span>
+              <span class="card-time">Hace 5h</span>
+            </div>
+            <div class="room-card-name">Conjunto Los Pinos</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★★★★★★</span>
+              <span class="score">10 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>3 hab.</span><span>·</span><span>2 baños</span><span>·</span><span>72 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              La Plazuela, Cajicá
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$980.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-primary btn-sm" id="card3-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-alcazar-thumb.jpg" alt="Alcázar de Cajicá" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-danger">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></svg>
+                Poco compatible
+              </span>
+              <span class="card-time">Ayer</span>
+            </div>
+            <div class="room-card-name">Alcázar de Cajicá</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★☆☆☆☆☆</span>
+              <span class="score">5.2 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>1 hab.</span><span>·</span><span>1 baño</span><span>·</span><span>42 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Autopista Norte km 42 · Cajicá
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$650.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-outline btn-sm" id="card4-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-hacienda-thumb.jpg" alt="Hacienda Cajicá, El Progreso" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-warning">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path fill="#fff" d="M11 7h2v6h-2zm0 8h2v2h-2z"/></svg>
+                Compatible
+              </span>
+              <span class="card-time">Hace 2 días</span>
+            </div>
+            <div class="room-card-name">Hacienda Cajicá</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★★★★☆☆</span>
+              <span class="score">8.1 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>2 hab.</span><span>·</span><span>1 baño</span><span>·</span><span>60 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              El Progreso, Cajicá
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$1.100.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-primary btn-sm" id="card5-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="room-card room-card-h" tabindex="0">
+          <div class="room-card-img">
+            <img src="images/apt-serranias-thumb.webp" alt="Serranías de Cajicá" loading="lazy" />
+          </div>
+          <div class="room-card-body">
+            <div class="room-card-header-row">
+              <span class="pill pill-success">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.41-1.41L10 13.67l6.59-6.59L18 8.5l-8 8z"/></svg>
+                Muy compatible
+              </span>
+              <span class="card-time">Hace 6h</span>
+            </div>
+            <div class="room-card-name">Serranías de Cajicá</div>
+            <div class="room-card-rating">
+              <span class="stars-10">★★★★★★★★★☆</span>
+              <span class="score">9.0 / 10</span>
+            </div>
+            <div class="room-card-specs">
+              <span>2 hab.</span><span>·</span><span>2 baños</span><span>·</span><span>68 m²</span>
+            </div>
+            <div class="room-card-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Vereda El Misterio · Cajicá
+            </div>
+            <div class="room-card-bottom">
+              <div class="room-card-price">$790.000<small>/mes</small></div>
+              <a href="apartamento.html" class="btn btn-primary btn-sm" id="card6-ver-detalle">Ver Detalle →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

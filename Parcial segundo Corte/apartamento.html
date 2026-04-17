@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conjunto El Nogal — Apartamento en Cajicá · RoomiesCajicá</title>
+  <meta name="description" content="Apartamento disponible en el Conjunto El Nogal, Cajicá Norte. 2 habitaciones, 65m², parqueadero incluido. $850.000/mes." />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a href="index.html" class="navbar-logo">
+          Roomies<span class="logo-dot">·</span>Cajicá
+        </a>
+        <ul class="navbar-links" role="list">
+          <li><a href="busqueda.html">Buscar Roomie</a></li>
+          <li><a href="index.html#como-funciona">Cómo Funciona</a></li>
+          <li><a href="apartamento.html" class="active">Apartamentos</a></li>
+          <li><a href="perfil.html">Perfiles</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <a href="#" class="btn btn-outline btn-sm" id="btn-login">Iniciar Sesión</a>
+          <a href="#" class="btn btn-primary btn-sm" id="btn-register">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main layout -->
+  <main class="page-apt" id="main-content">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="Ruta de navegación">
+        <ol class="apt-breadcrumb">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="bc-sep">/</li>
+          <li><a href="busqueda.html">Buscar</a></li>
+          <li class="bc-sep">/</li>
+          <li>Cajicá Norte</li>
+          <li class="bc-sep">/</li>
+          <li aria-current="page">Conjunto El Nogal</li>
+        </ol>
+      </nav>
+
+      <!-- ══════════ GALLERY ══════════ -->
+      <figure class="apt-gallery" aria-label="Galería de fotos del apartamento">
+
+        <!-- Main large photo -->
+        <div class="apt-gallery-main">
+          <img
+            src="images/apt-nogal-sala.jpg"
+            alt="Sala principal del apartamento en Conjunto El Nogal"
+            style="width:100%; height:100%; object-fit:cover; display:block;"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Thumbnail 1 -->
+        <div class="apt-gallery-thumb">
+          <img
+            src="images/apt-nogal-cocina.jpg"
+            alt="Cocina del apartamento en El Nogal"
+            style="width:100%; height:100%; object-fit:cover; display:block;"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Thumbnail 2 (with "see all" pill) -->
+        <div class="apt-gallery-thumb" style="position:relative;">
+          <img
+            src="images/apt-nogal-habitacion.webp"
+            alt="Habitación principal del apartamento en El Nogal"
+            style="width:100%; height:100%; object-fit:cover; display:block;"
+            loading="lazy"
+          />
+          <div class="gallery-pill" role="button" tabindex="0">📷 Ver 8 fotos</div>
+        </div>
+
+      </figure>
+      <!-- /GALLERY -->
+
+      <!-- ══════════ MAIN LAYOUT ══════════ -->
+      <div class="apt-layout">
+
+        <!-- ── LEFT: Info ── -->
+        <article class="apt-info" aria-labelledby="apt-title">
+
+          <!-- Price + tags -->
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-price">$850.000<small>/mes</small></div>
+              <div style="font-size:11px; color:var(--color-text-muted); margin-top:2px;">Precio por habitación · Negociable</div>
+            </div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end;">
+              <span class="pill pill-success">Disponible ahora</span>
+              <span class="pill pill-amber">✦ Destacado</span>
+            </div>
+          </div>
+
+          <!-- Title & Location -->
+          <h1 class="apt-title" id="apt-title">Conjunto El Nogal — Cajicá Norte</h1>
+
+          <div class="apt-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Calle 5 #8-23, Cajicá Norte, Cundinamarca · A 5 min del centro de Cajicá
+          </div>
+
+          <!-- Specs bar -->
+          <div class="apt-specs" role="list" aria-label="Especificaciones del apartamento">
+            <div class="apt-spec" role="listitem">
+              <strong>2</strong>
+              <small>Habitaciones</small>
+            </div>
+            <div class="apt-spec" role="listitem">
+              <strong>1</strong>
+              <small>Baños</small>
+            </div>
+            <div class="apt-spec" role="listitem">
+              <strong>65</strong>
+              <small>m²</small>
+            </div>
+            <div class="apt-spec" role="listitem">
+              <strong>4°</strong>
+              <small>Piso</small>
+            </div>
+            <div class="apt-spec" role="listitem">
+              <strong>1</strong>
+              <small>Parqueadero</small>
+            </div>
+          </div>
+
+          <!-- Compatibility banner -->
+          <div class="apt-compat-banner" role="region" aria-label="Puntuación de compatibilidad">
+            <div class="compat-score" aria-label="92 por ciento de compatibilidad">92%</div>
+            <div class="compat-text">
+              <strong>
+                <span class="pill pill-success" style="margin-right:4px;">Muy compatible</span>
+                con tu perfil
+              </strong>
+              <p>Coincidencia en horarios, hábitos de limpieza y nivel de ruido</p>
+              <div class="compat-bar-wrap" style="margin-top:8px;">
+                <div class="compat-bar">
+                  <div class="compat-fill" style="width:92%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <h2 class="apt-section-title">Descripción</h2>
+          <p class="apt-description">
+            Hermoso apartamento ubicado en el Conjunto Residencial El Nogal, uno de los conjuntos
+            más tranquilos y seguros de Cajicá Norte. La unidad cuenta con dos amplias habitaciones,
+            sala-comedor con buena iluminación natural, cocina integral equipada con estufa y nevera,
+            y un baño completo con ventilación.
+          </p>
+          <p class="apt-description">
+            El conjunto ofrece vigilancia 24 horas, zonas verdes, parque infantil y salón comunal.
+            A tan solo 5 minutos del centro de Cajicá y con acceso fácil a la autopista norte para
+            quienes trabajan en Bogotá o Zipaquirá. El canon incluye administración y parqueadero.
+            Se prefiere roomie verificado, ordenado y tranquilo.
+          </p>
+
+          <!-- Amenities -->
+          <h2 class="apt-section-title">Amenidades</h2>
+          <div class="apt-amenities" role="list" aria-label="Lista de amenidades">
+            <span class="amenity-tag" role="listitem">🔒 Vigilancia 24h</span>
+            <span class="amenity-tag" role="listitem">🚗 Parqueadero</span>
+            <span class="amenity-tag" role="listitem">🌿 Zonas verdes</span>
+            <span class="amenity-tag" role="listitem">❄️ Sin mascotas</span>
+            <span class="amenity-tag" role="listitem">📶 WiFi incluido</span>
+            <span class="amenity-tag" role="listitem">🧺 Cuarto útil</span>
+            <span class="amenity-tag" role="listitem">🛗 Ascensor</span>
+            <span class="amenity-tag" role="listitem">♨️ Agua caliente</span>
+            <span class="amenity-tag" role="listitem">🏊 Piscina comunal</span>
+            <span class="amenity-tag" role="listitem">🚲 Bicicletero</span>
+          </div>
+
+          <!-- Map mini -->
+          <h2 class="apt-section-title">Ubicación</h2>
+          <div style="border-radius:var(--radius-card); overflow:hidden; border:1px solid var(--color-border); height:200px; margin-bottom:var(--sp-6);">
+            <iframe
+              title="Ubicación del apartamento en Cajicá"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0200%2C4.9100%2C-73.9950%2C4.9250&amp;layer=mapnik&amp;marker=4.9178%2C-74.0133"
+              style="width:100%; height:100%; border:none; display:block;"
+              loading="lazy"
+              referrerpolicy="no-referrer">
+            </iframe>
+          </div>
+
+          <!-- Related listings -->
+          <h2 class="apt-section-title">Apartamentos similares</h2>
+          <div class="related-grid">
+
+            <article class="room-card" tabindex="0">
+              <div class="room-card-img" style="aspect-ratio:16/9; overflow:hidden;">
+                <img
+                  src="images/apt-rosal-thumb.jpg"
+                  alt="Torres del Rosal, Cajicá Centro"
+                  style="width:100%; height:100%; object-fit:cover; display:block;"
+                  loading="lazy"
+                />
+              </div>
+              <div class="room-card-body">
+                <span class="pill pill-warning" style="font-size:10px;">Compatible</span>
+                <div class="room-card-name">Torres del Rosal</div>
+                <div class="room-card-price">$720.000<small>/mes</small></div>
+              </div>
+              <div class="room-card-footer">
+                <span class="room-card-location" style="font-size:11px;">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Cajicá Centro
+                </span>
+                <a href="apartamento.html" class="btn btn-outline btn-sm" id="related1-ver">Ver</a>
+              </div>
+            </article>
+
+            <article class="room-card" tabindex="0">
+              <div class="room-card-img" style="aspect-ratio:16/9; overflow:hidden;">
+                <img
+                  src="images/apt-pinos-thumb.jpg"
+                  alt="Conjunto Los Pinos, La Plazuela"
+                  style="width:100%; height:100%; object-fit:cover; display:block;"
+                  loading="lazy"
+                />
+              </div>
+              <div class="room-card-body">
+                <span class="pill pill-success" style="font-size:10px;">Muy compatible</span>
+                <div class="room-card-name">Conjunto Los Pinos</div>
+                <div class="room-card-price">$980.000<small>/mes</small></div>
+              </div>
+              <div class="room-card-footer">
+                <span class="room-card-location" style="font-size:11px;">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  La Plazuela
+                </span>
+                <a href="apartamento.html" class="btn btn-primary btn-sm" id="related2-ver">Ver</a>
+              </div>
+            </article>
+
+            <article class="room-card" tabindex="0">
+              <div class="room-card-img" style="aspect-ratio:16/9; overflow:hidden;">
+                <img
+                  src="images/apt-serranias-thumb.webp"
+                  alt="Serranías de Cajicá"
+                  style="width:100%; height:100%; object-fit:cover; display:block;"
+                  loading="lazy"
+                />
+              </div>
+              <div class="room-card-body">
+                <span class="pill pill-success" style="font-size:10px;">Muy compatible</span>
+                <div class="room-card-name">Serranías de Cajicá</div>
+                <div class="room-card-price">$790.000<small>/mes</small></div>
+              </div>
+              <div class="room-card-footer">
+                <span class="room-card-location" style="font-size:11px;">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  El Misterio
+                </span>
+                <a href="apartamento.html" class="btn btn-primary btn-sm" id="related3-ver">Ver</a>
+              </div>
+            </article>
+
+          </div>
+
+        </article>
+        <!-- /LEFT -->
+
+        <!-- ── RIGHT: Advertiser sidebar ── -->
+        <aside aria-label="Perfil del anunciante">
+          <div class="advertiser-card">
+
+            <!-- Header -->
+            <div class="advertiser-header">
+              <img
+                src="images/avatar-carlos.avif"
+                alt="Carlos M., arrendador verificado"
+                style="width:52px; height:52px; border-radius:50%; object-fit:cover; display:block; flex-shrink:0;"
+                loading="lazy"
+              />
+              <div>
+                <div class="advertiser-name">
+                  Carlos M.
+                  <span class="badge badge-verified" style="font-size:10px;">
+                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-label="Verificado"><polyline points="20 6 9 17 4 12"/></svg>
+                    Verificado
+                  </span>
+                </div>
+                <div class="advertiser-meta">Arrendador · Cajicá, Cundinamarca</div>
+                <div class="user-rating-10" style="margin-top:3px;">
+                  <span class="stars-10" style="font-size:10px;">★★★★★★★★★☆</span>
+                  <span class="score">9.6 / 10 (24 reseñas)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="advertiser-stats">
+              <div class="adv-stat">
+                <strong>3</strong>
+                <small>Prop. activas</small>
+              </div>
+              <div class="adv-stat">
+                <strong>2h</strong>
+                <small>Respuesta</small>
+              </div>
+              <div class="adv-stat">
+                <strong>98%</strong>
+                <small>Responde</small>
+              </div>
+            </div>
+
+            <!-- Member since -->
+            <div style="font-size:11px; color:var(--color-text-muted); margin-bottom:12px;">
+              Miembro desde octubre 2024 · 12 arrendamientos completados
+            </div>
+
+            <!-- Lifestyle tags -->
+            <div class="user-card-tags" style="margin-bottom:16px;">
+              <span class="pill pill-neutral">🏢 Trabajo remoto</span>
+              <span class="pill pill-neutral">🐕 Pet friendly</span>
+              <span class="pill pill-neutral">🧹 Muy ordenado</span>
+            </div>
+
+            <!-- Price breakdown -->
+            <div style="background:var(--color-bg); border:1px solid var(--color-border); border-radius:var(--radius-card); padding:14px 16px; margin-bottom:16px;">
+              <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--color-text-secondary); margin-bottom:10px;">Resumen de costos</div>
+              <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px;">
+                <span>Canon mensual</span>
+                <span>$850.000</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px;">
+                <span>Administración</span>
+                <span style="color:var(--color-primary);">Incluida</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:10px;">
+                <span>Servicios públicos</span>
+                <span>~$90.000 est.</span>
+              </div>
+              <div style="border-top:1px solid var(--color-border); padding-top:10px; display:flex; justify-content:space-between; font-size:13px; font-weight:700;">
+                <span>Total estimado</span>
+                <span style="color:var(--color-primary-dark);">~$940.000/mes</span>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="advertiser-actions">
+              <a href="mensajes.html" class="btn btn-primary btn-lg" id="btn-enviar-mensaje-apt" style="width:100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Enviar Mensaje
+              </a>
+              <button class="btn btn-outline" id="btn-agendar-visita" style="width:100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                Agendar visita
+              </button>
+              <button class="btn btn-ghost" id="btn-guardar-apt" style="width:100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                Guardar apartamento
+              </button>
+            </div>
+
+            <!-- Safety note -->
+            <div style="margin-top:14px; padding:10px 12px; background:#E3F8F1; border-radius:var(--radius-card); border:1px solid #B2E8D2;">
+              <div style="display:flex; align-items:flex-start; gap:6px; font-size:11px; color:var(--color-primary-dark); line-height:1.5;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0; margin-top:1px;" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+                <span>Nunca compartas datos personales ni hagas pagos fuera de la plataforma.</span>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+        <!-- /RIGHT -->
+
+      </div>
+      <!-- /apt-layout -->
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">Roomies·Cajicá</div>
+          <p class="footer-brand-tagline">Conectamos millennials con roomies y apartamentos verificados en Cajicá, Colombia.</p>
+        </div>
+        <nav class="footer-col" aria-label="Plataforma">
+          <h5>Plataforma</h5>
+          <a href="busqueda.html">Buscar Roomie</a>
+          <a href="apartamento.html">Apartamentos</a>
+          <a href="#">Listar Propiedad</a>
+        </nav>
+        <nav class="footer-col" aria-label="Soporte">
+          <h5>Soporte</h5>
+          <a href="#">Centro de Ayuda</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </nav>
+        <nav class="footer-col" aria-label="Comunidad">
+          <h5>Comunidad</h5>
+          <a href="#">Blog de Cajicá</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 RoomiesCajicá · Hecho con ♥ en Cajicá</span>
+        <span>Colombia · Todos los derechos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
