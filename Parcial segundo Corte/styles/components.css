@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--sp-8);
+  gap: var(--sp-5);
 }
 
 .navbar-logo {
@@ -40,7 +40,7 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: var(--sp-8);
+  gap: var(--sp-5);
   flex: 1;
   justify-content: center;
 }
@@ -361,7 +361,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--sp-4);
+  gap: var(--sp-3);
   box-shadow: var(--shadow-sm);
 }
 .user-card-badge-new {
@@ -405,7 +405,7 @@
   width: 100%;
   background: #E3F8F1;
   border-radius: var(--radius-card);
-  padding: var(--sp-3) var(--sp-5);
+  padding: var(--sp-3) var(--sp-6);
   text-align: center;
 }
 .user-card-budget .label {
@@ -465,7 +465,7 @@
   font-size: 15px;
   max-width: 500px;
   line-height: 1.7;
-  margin-bottom: var(--sp-12);
+  margin-bottom: var(--sp-6);
 }
 
 /* FEATURE CARD */
@@ -487,7 +487,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
 }
 .feature-card h4 { margin-bottom: var(--sp-2); }
 .feature-card p  { color: var(--color-text-secondary); font-size: 13px; line-height: 1.7; }
@@ -507,7 +507,7 @@
   line-height: 1.75;
   color: var(--color-text);
   font-style: italic;
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
 }
 .testimonial-author { display: flex; align-items: center; gap: var(--sp-2); }
 .testimonial-author-name { font-weight: 600; font-size: 13px; }
@@ -571,8 +571,8 @@
 .footer-grid {
   display: grid;
   grid-template-columns: 1.8fr 1fr 1fr 1fr;
-  gap: var(--sp-10);
-  margin-bottom: var(--sp-10);
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-6);
 }
 .footer-brand-logo {
   font-family: var(--font-heading);
@@ -587,7 +587,7 @@
   text-transform: uppercase;
   letter-spacing: .08em;
   color: #fff;
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
 }
 .footer-col a {
   display: block;
@@ -605,7 +605,7 @@
   justify-content: space-between;
   font-size: 11px;
   color: rgba(255,255,255,.35);
-  gap: var(--sp-4);
+  gap: var(--sp-3);
 }
 
 /* SISTEMA DE 10 ESTRELLAS (Design System) */

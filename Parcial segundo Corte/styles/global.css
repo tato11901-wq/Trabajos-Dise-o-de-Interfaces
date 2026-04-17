@@ -29,14 +29,12 @@
   --sp-1:  4px;
   --sp-2:  8px;
   --sp-3:  12px;
-  --sp-4:  16px;
-  --sp-5:  20px;
-  --sp-6:  24px;
-  --sp-8:  32px;
-  --sp-10: 40px;
-  --sp-12: 48px;
-  --sp-16: 64px;
-  --sp-20: 80px;
+  --sp-4:  24px;
+  --sp-5:  32px;
+  --sp-6:  48px;
+  --sp-7:  64px;
+  --sp-8:  80px;
+  --sp-9:  120px;
 
   /* Border Radius */
   --radius-btn:  10px;
@@ -124,7 +122,7 @@ p  { line-height: 1.7; }
   color: var(--color-text-secondary);
   font-size: 11px;
   text-align: center;
-  padding: var(--sp-4);
+  padding: var(--sp-3);
   user-select: none;
 }
 
