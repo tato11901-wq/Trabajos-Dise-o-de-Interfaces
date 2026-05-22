@@ -1,0 +1,7 @@
+{
+  "name": "ejemploUI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
